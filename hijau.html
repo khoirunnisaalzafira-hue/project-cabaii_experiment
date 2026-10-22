@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🟢 Cabai Hijau - Si Segar Gurih Primadona Nasi Padang | Warung Cabai</title>
+  <meta name="description" content="Eksplorasi Cabai Hijau: rahasia Sambal Ijo Padang agar tidak pahit, kuis seru berhadiah sertifikat, dan resep Lado Mudo gurih!">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🟢</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" id="logoLink">
+        <span class="brand-icon">🌶️</span>
+        <div class="brand-text">
+          <span class="brand-name">Cabai</span>
+          <span class="brand-tagline">Ensiklopedia Santai Cabai Nusantara</span>
+        </div>
+      </a>
+
+      <!-- Navigation for the 3 Pages -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item rawit">
+            <a href="index.html">🌶️ Cabai Rawit</a>
+          </li>
+          <li class="nav-item merah">
+            <a href="merah.html">🔴 Cabai Merah</a>
+          </li>
+          <li class="nav-item hijau active">
+            <a href="hijau.html">🟢 Cabai Hijau</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="action-btn" id="soundToggleBtn" title="Suara Efek (On/Off)">🔊</button>
+        <button class="action-btn" id="themeToggleBtn" title="Mode Gelap / Terang">🌙</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill badge-hijau">
+            <span>🟢</span> Si Segar Ramah Lidah
+          </div>
+          <h1 class="hero-title">
+            Cabai Hijau: <br>
+            <span class="highlight hijau-gradient">Gak Bikin Mules, Malah Bikin Nambah Nasi!</span>
+          </h1>
+          <p class="hero-desc">
+            Cabai hijau adalah bukti bahwa makanan pedas gak harus bikin telinga berdengung! Dengan rasa pedas yang lembut dan aroma segar alami, cabai hijau jadi magnet utama di etalase Rumah Makan Padang.
+          </p>
+
+          <!-- Quick Stats Chips -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-label">Tingkat Pedas</span>
+              <span class="stat-value" style="color: #16a34a;">2.500 - 10.000 SHU</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Karakter Khas</span>
+              <span class="stat-value">Aromatik, Gurih, Sedikit Asam Segar</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Menu Legendaris</span>
+              <span class="stat-value">Sambal Ijo (Lado Mudo) Padang</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image Card -->
+        <div class="hero-image-wrapper">
+          <div class="hero-card-frame">
+            <img src="cabai_hijau.svg" alt="Ilustrasi Cabai Hijau Segar dan Tomat Hijau" id="heroHijauImg">
+            <div class="floating-badge">
+              <div>
+                <div class="badge-text-title">Cabai Hijau & Tomat Hijau</div>
+                <div class="badge-text-sub">Duet maut Sambal Ijo Lado Mudo Minang</div>
+              </div>
+              <a href="#kuis" class="btn-pill btn-spicy-hijau">Ikut Kuis 🎯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION 1: KUIS PENIKMAT SAMBAL IJO -->
+    <section class="section" id="kuis">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Fitur Interaktif 1</span>
+          <h2 class="section-title">Uji Pengetahuan: Kuis Sambal Ijo Sejati</h2>
+          <p class="section-desc">Pilih jawaban yang paling tepat di 3 pertanyaan seru ini untuk mendapatkan gelar kehormatan kulinermu!</p>
+        </div>
+
+        <div class="interactive-card quiz-box" id="hijauQuizContainer">
+          <!-- Question 1 -->
+          <div class="quiz-question-box">
+            <h4 class="quiz-q-title">1. Kenapa cabai hijau warnanya hijau royo-royo?</h4>
+            <div class="quiz-options">
+              <button type="button" class="quiz-opt-btn" data-question="q1" data-val="A">
+                A. Karena dipanen sebelum matang sempurna dan masih kaya klorofil hijau.
+              </button>
+              <button type="button" class="quiz-opt-btn" data-question="q1" data-val="B">
+                B. Karena pohonnya disiram air daun pandan setiap pagi.
+              </button>
+              <button type="button" class="quiz-opt-btn" data-question="q1" data-val="C">
+                C. Karena direndam pewarna makanan hijau sebelum dijual di pasar.
+              </button>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="quiz-question-box">
+            <h4 class="quiz-q-title">2. Rahasia apa yang bikin Sambal Ijo Padang warnanya tetap hijau segar & tidak pahit?</h4>
+            <div class="quiz-options">
+              <button type="button" class="quiz-opt-btn" data-question="q2" data-val="A">
+                A. Diberi perasan jeruk nipis dan direbus singkat (blanching).
+              </button>
+              <button type="button" class="quiz-opt-btn" data-question="q2" data-val="B">
+                B. Digoreng dengan api sangat besar sampai gosong kehitaman.
+              </button>
+              <button type="button" class="quiz-opt-btn" data-question="q2" data-val="C">
+                C. Dicampur kecap manis sebanyak 5 sendok makan.
+              </button>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="quiz-question-box">
+            <h4 class="quiz-q-title">3. Dibandingkan Cabai Rawit, sensasi makan Cabai Hijau itu bagaimana?</h4>
+            <div class="quiz-options">
+              <button type="button" class="quiz-opt-btn" data-question="q3" data-val="A">
+                A. Lebih pedas 100 kali lipat sampai bikin pingsan.
+              </button>
+              <button type="button" class="quiz-opt-btn" data-question="q3" data-val="B">
+                B. Lebih ramah, gurih, dan nikmat dikunyah dalam jumlah banyak tanpa takut mules.
+              </button>
+              <button type="button" class="quiz-opt-btn" data-question="q3" data-val="C">
+                C. Rasanya manis seperti buah semangka tanpa biji.
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Result Display Card -->
+          <div class="quiz-result-card" id="quizResultCard">
+            <div class="quiz-badge-cert" id="quizCertIcon">🎖️</div>
+            <div style="font-size: 1.5rem; font-weight: 800; font-family: 'Fredoka', sans-serif;" id="quizResultTitle">
+              Gelar: Duta Besar Sambal Ijo Padang!
+            </div>
+            <div style="font-size: 1rem; color: var(--text-secondary); margin: 8px 0 16px;" id="quizResultDesc">
+              Skor: <span id="quizScoreNumber" style="font-weight: 800; color: #16a34a;">3/3</span>. Kamu memang jawara kuliner sejati!
+            </div>
+            <button type="button" class="btn-pill btn-spicy-hijau" id="resetQuizBtn">Coba Kuis Lagi 🔄</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3 RAHASIA AGAR SAMBAL IJO TIDAK PAHIT -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Tips Dapur Minang</span>
+          <h2 class="section-title">3 Rahasia Emas Sambal Ijo Anti-Pahit</h2>
+          <p class="section-desc">Pernah bikin sambal ijo sendiri tapi rasanya langu atau pahit? Ini 3 kunci yang wajib kamu tahu:</p>
+        </div>
+
+        <div class="facts-grid">
+          <div class="interactive-card" style="border-top: 5px solid #16a34a;">
+            <div style="font-size: 2.2rem; margin-bottom: 8px;">⏱️</div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 8px;">1. Rebus Singkat (3-4 Menit)</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary);">
+              Jangan rebus cabai hijau terlalu lama! Cukup 3 sampai 4 menit di air mendidih sampai sedikit layu. Kalau kelamaan, warna hijaunya akan berubah jadi cokelat gelap kusam.
+            </p>
+          </div>
+
+          <div class="interactive-card" style="border-top: 5px solid #22c55e;">
+            <div style="font-size: 2.2rem; margin-bottom: 8px;">🍋</div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 8px;">2. Sentuhan Jeruk Nipis</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary);">
+              Asam sitrat alami dari jeruk nipis berfungsi sebagai antioksidan alami yang mengunci warna hijau klorofil dan melunturkan rasa pahit (getah) cabai hijau muda.
+            </p>
+          </div>
+
+          <div class="interactive-card" style="border-top: 5px solid #86efac;">
+            <div style="font-size: 2.2rem; margin-bottom: 8px;">🥥</div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 8px;">3. Minyak Kelapa / Minyak Gurih</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary);">
+              Gunakan minyak yang agak melimpah saat menumis ulekan sambal ijo. Minyak panas akan meresapkan aroma bawang merah dan tomat hijau ke dalam serat cabai secara sempurna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION 3: RESEP SAMBAL IJO PADANG CHECKLIST -->
+    <section class="section" style="background: rgba(22, 163, 74, 0.03);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Dapur Praktis</span>
+          <h2 class="section-title">Resep Interaktif: Sambal Ijo Padang (Lado Mudo)</h2>
+          <p class="section-desc">Kelezatan asli khas Ranah Minang yang bikin sepiring nasi hangat langsung tandas! Centang tiap langkahnya:</p>
+        </div>
+
+        <div class="interactive-card recipe-grid">
+          <div class="recipe-info-col">
+            <h3>Bahan-Bahan Sambal Ijo:</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+              <li>🫑 <strong>15 buah</strong> Cabai hijau besar (potong kasar)</li>
+              <li>〰️ <strong>10 buah</strong> Cabai hijau keriting (biar ada gurih pedasnya)</li>
+              <li>🍅 <strong>3 buah</strong> Tomat hijau kecil segar</li>
+              <li>🧅 <strong>8 butir</strong> Bawang merah (kupas bersih)</li>
+              <li>🍋 <strong>1 sendok makan</strong> Air perasan jeruk nipis segar</li>
+              <li>🧂 <strong>1 sendok teh</strong> Garam dan 1/2 sdt kaldu jamur</li>
+              <li>🍳 <strong>6 sendok makan</strong> Minyak goreng panas</li>
+            </ul>
+
+            <div class="recipe-tips" style="border-left-color: #16a34a; background: rgba(22, 163, 74, 0.1);">
+              <strong>🌟 Teman Makan Terbaik:</strong>
+              Sajikan bersama ayam goreng lengkuas, dendeng batokok, atau telur dadar tebal khas Padang. Dijamin nagih!
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="recipe-progress-wrap">
+              <div class="progress-label">
+                <span id="recipeProgressText">Progress Masak: 0%</span>
+                <button id="resetChecklistBtn" style="background:none; border:none; color:var(--text-muted); font-size:0.75rem; cursor:pointer; text-decoration:underline;">Reset Checklist</button>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="recipeProgressFill" style="background: linear-gradient(90deg, #86efac, #16a34a);"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Steps Checklist -->
+          <div class="checklist-box">
+            <div class="checklist-item" id="hstep1">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 1:</strong> Didihkan air di panci, masukkan cabai hijau besar, cabai hijau keriting, tomat hijau, dan bawang merah. Rebus selama 3-4 menit saja lalu angkat dan tiriskan.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="hstep2">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 2:</strong> Pindahkan bahan rebusan ke cobek batu. Tumbuk kasar (ulek peca-peca), jangan terlalu halus ya!
+              </div>
+            </div>
+
+            <div class="checklist-item" id="hstep3">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 3:</strong> Kucuri 1 sdm air perasan jeruk nipis, tambahkan garam dan kaldu jamur secukupnya. Aduk rata di cobek.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="hstep4">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 4:</strong> Panaskan 6 sdm minyak di wajan dengan api sedang cenderung kecil.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="hstep5">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 5:</strong> Tumis ulekan sambal ijo sebentar saja (1-2 menit) sampai minyak dan bumbu menyatu gurih. Matikan kompor dan siap disendokkan ke piring!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT PAGES NAVIGATION -->
+    <section class="next-pages-section">
+      <div class="container">
+        <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.4rem;">Jelajahi Jenis Cabai Lainnya:</h3>
+        <div class="next-grid">
+          <a href="index.html" class="next-card">
+            <span class="next-card-icon">🌶️</span>
+            <div class="next-card-info">
+              <h4>Halaman 1: Cabai Rawit</h4>
+              <p>Si kecil pedas mematikan dengan simulator Scoville dan mitos biji cabai!</p>
+            </div>
+          </a>
+
+          <a href="merah.html" class="next-card">
+            <span class="next-card-icon">🔴</span>
+            <div class="next-card-info">
+              <h4>Halaman 2: Cabai Merah</h4>
+              <p>Si cantik merona dengan kalkulator porsi masak balado dan rendang!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-quote">"Makan Nasi Padang tanpa kuah sambal ijo, bagai pahlawan tanpa pedang!" 🟢</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Cabai Rawit</a></li>
+        <li><a href="merah.html">Cabai Merah</a></li>
+        <li><a href="hijau.html">Cabai Hijau</a></li>
+      </ul>
+      <p class="footer-credit">© 2026 Cabai Nusantara • Dibuat dengan cinta, tawa, dan sedikit keringat pedas.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

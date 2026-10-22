@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔴 Cabai Merah - Si Cantik Merona Penggugah Selera | Warung Cabai</title>
+  <meta name="description" content="Kupas tuntas Cabai Merah: rahasia warna menggoda Sambal Balado, kalkulator porsi bumbu masak, dan beda cabai merah keriting vs besar!">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔴</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" id="logoLink">
+        <span class="brand-icon">🌶️</span>
+        <div class="brand-text">
+          <span class="brand-name">Cabai</span>
+          <span class="brand-tagline">Ensiklopedia Santai Cabai Nusantara</span>
+        </div>
+      </a>
+
+      <!-- Navigation for the 3 Pages -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item rawit">
+            <a href="index.html">🌶️ Cabai Rawit</a>
+          </li>
+          <li class="nav-item merah active">
+            <a href="merah.html">🔴 Cabai Merah</a>
+          </li>
+          <li class="nav-item hijau">
+            <a href="hijau.html">🟢 Cabai Hijau</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="action-btn" id="soundToggleBtn" title="Suara Efek (On/Off)">🔊</button>
+        <button class="action-btn" id="themeToggleBtn" title="Mode Gelap / Terang">🌙</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill badge-merah">
+            <span>🔴</span> Si Primadona Warna
+          </div>
+          <h1 class="hero-title">
+            Cabai Merah: <br>
+            <span class="highlight merah-gradient">Cantik Merona, Bikin Lapar Seketika!</span>
+          </h1>
+          <p class="hero-desc">
+            Bayangkan rendang Padang atau balado telur tanpa cabai merah? Pasti pucat dan kurang menggigit! Cabai merah adalah kunci estetika dan rasa gurih manis alami masakan Indonesia.
+          </p>
+
+          <!-- Quick Stats Chips -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-label">Tingkat Pedas</span>
+              <span class="stat-value" style="color: #dc2626;">10.000 - 30.000 SHU</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Nama Latin</span>
+              <span class="stat-value">Capsicum annuum L.</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Fungsi Utama</span>
+              <span class="stat-value">Warna Merah Alami & Aroma Sedap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image Card -->
+        <div class="hero-image-wrapper">
+          <div class="hero-card-frame">
+            <img src="cabai_merah.jpg" alt="Cabai Merah Keriting dan Besar di Tampah Anyaman" id="heroMerahImg">
+            <div class="floating-badge">
+              <div>
+                <div class="badge-text-title">Cabai Merah Keriting & Besar</div>
+                <div class="badge-text-sub">Kombinasi sempurna warna & kepedasan sedap</div>
+              </div>
+              <a href="#kalkulator" class="btn-pill btn-spicy-merah">Hitung Porsi 🧮</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION 1: KALKULATOR KEBUTUHAN CABAI MERAH -->
+    <section class="section" id="kalkulator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Fitur Interaktif 1</span>
+          <h2 class="section-title">Kalkulator Kebutuhan Cabai & Bumbu</h2>
+          <p class="section-desc">Mau masak buat arisan keluarga atau makan malam berdua? Masukkan jumlah porsi, biar bumbu cabaimu pas dan gak bikin mules!</p>
+        </div>
+
+        <div class="interactive-card calculator-box">
+          <!-- Input Controls -->
+          <div class="calc-input-group">
+            <div>
+              <label for="dishTypeSelect" style="display:block; font-weight:700; margin-bottom:8px;">Pilih Menu Masakan:</label>
+              <select id="dishTypeSelect" style="width:100%; padding:12px 16px; border-radius:12px; border:1px solid var(--border-light); font-size:1rem; font-weight:600; background:var(--bg-primary); color:var(--text-primary); cursor:pointer;">
+                <option value="balado">🌶️ Sambal Balado Padang (Pedas Gurih)</option>
+                <option value="rendang">🥩 Bumbu Rendang Daging Sapi (Kaya Rempah)</option>
+                <option value="rica">🍗 Ayam Rica-Rica Merah (Pedas Segar)</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="display:block; font-weight:700; margin-bottom:8px;">Tentukan Jumlah Porsi Orang:</label>
+              <div class="form-control-row">
+                <button type="button" class="btn-counter" id="btnMinusPortion" aria-label="Kurang Porsi">−</button>
+                <span class="portion-number" id="portionValue">4</span>
+                <span style="font-weight:700; font-size:1.1rem; color:var(--text-secondary);">Orang</span>
+                <button type="button" class="btn-counter" id="btnPlusPortion" aria-label="Tambah Porsi">+</button>
+              </div>
+            </div>
+
+            <div style="background:rgba(220, 38, 38, 0.08); padding:14px; border-radius:12px; font-size:0.88rem; color:var(--text-secondary);">
+              💡 <em>Tips Emak:</em> Cabai keriting bertugas memberi sensasi pedas dan aroma, sedangkan cabai merah besar memberi volume kuah kental dan warna merah menyala!
+            </div>
+          </div>
+
+          <!-- Calculation Live Output -->
+          <div class="calc-results-card">
+            <h4 style="font-size:1.1rem; margin-bottom:6px; color:var(--text-primary);">
+              Takaran Bumbu untuk <span id="currentDishName" style="color:#dc2626;">Sambal Balado Padang</span>:
+            </h4>
+
+            <div class="result-item">
+              <div>
+                <strong>Cabai Merah Keriting</strong>
+                <div style="font-size:0.8rem; color:var(--text-muted);">Pemberi rasa pedas & aroma gurih</div>
+              </div>
+              <span class="result-qty" id="resKeriting">160 gram (~27 buah)</span>
+            </div>
+
+            <div class="result-item">
+              <div>
+                <strong>Cabai Merah Besar (TW)</strong>
+                <div style="font-size:0.8rem; color:var(--text-muted);">Pemberi warna merah & tekstur saus</div>
+              </div>
+              <span class="result-qty" id="resBesar">80 gram (~5 buah)</span>
+            </div>
+
+            <div class="result-item">
+              <div>
+                <strong>Bawang Merah & Putih</strong>
+                <div style="font-size:0.8rem; color:var(--text-muted);">Aroma wangi umami nusantara</div>
+              </div>
+              <span class="result-qty" id="resBawang">8 butir Merah & 4 siung Putih</span>
+            </div>
+
+            <div class="result-item">
+              <div>
+                <strong>Minyak Goreng</strong>
+                <div style="font-size:0.8rem; color:var(--text-muted);">Untuk menumis hingga terbit minyak merah</div>
+              </div>
+              <span class="result-qty" id="resMinyak">6.0 Sendok Makan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PERBEDAAN KERITING VS BESAR -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Duel Dua Saudara</span>
+          <h2 class="section-title">Cabai Merah Keriting vs Cabai Merah Besar</h2>
+          <p class="section-desc">Sering keliru saat belanja di pasar tradisional? Ini dia beda fisik dan fungsinya di dapur!</p>
+        </div>
+
+        <div class="facts-grid">
+          <div class="interactive-card" style="border-top: 5px solid #dc2626;">
+            <div style="font-size:2.5rem; margin-bottom:8px;">〰️</div>
+            <h3 style="font-size:1.35rem; margin-bottom:8px;">Cabai Merah Keriting</h3>
+            <ul style="list-style:disc; margin-left:20px; font-size:0.95rem; color:var(--text-secondary); display:flex; flex-direction:column; gap:6px;">
+              <li><strong>Bentuk:</strong> Panjang langsing, bergelombang atau keriting tidak beraturan.</li>
+              <li><strong>Kadar Air:</strong> Relatif sedikit / lebih padat dagingnya.</li>
+              <li><strong>Tingkat Pedas:</strong> Lebih pedas dan menggigit di lidah dibanding jenis besar.</li>
+              <li><strong>Cocok untuk:</strong> Sambal terasi, tumis kangkung, balado basah, dan bumbu halus kering.</li>
+            </ul>
+          </div>
+
+          <div class="interactive-card" style="border-top: 5px solid #ef4444;">
+            <div style="font-size:2.5rem; margin-bottom:8px;">🪵</div>
+            <h3 style="font-size:1.35rem; margin-bottom:8px;">Cabai Merah Besar (TW)</h3>
+            <ul style="list-style:disc; margin-left:20px; font-size:0.95rem; color:var(--text-secondary); display:flex; flex-direction:column; gap:6px;">
+              <li><strong>Bentuk:</strong> Gemuk, lurus montok, kulit mulus mengkilap.</li>
+              <li><strong>Kadar Air:</strong> Cukup banyak, daging tebal dan renyah.</li>
+              <li><strong>Tingkat Pedas:</strong> Ramah di lidah, rasa manis alaminya lebih dominan.</li>
+              <li><strong>Cocok untuk:</strong> Hiasan (garnish tumpeng), irisan tumis saus tiram, sambal goreng ati.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION 3: RESEP SAMBAL BALADO CHECKLIST -->
+    <section class="section" style="background: rgba(220, 38, 38, 0.03);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Dapur Praktis</span>
+          <h2 class="section-title">Resep Interaktif: Sambal Balado Merah Khas Minang</h2>
+          <p class="section-desc">Rahasia balado merah yang wangi gurih dan warnanya tidak menghitam. Centang setiap langkahnya!</p>
+        </div>
+
+        <div class="interactive-card recipe-grid">
+          <div class="recipe-info-col">
+            <h3>Bahan Balado Juara:</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+              <li>🌶️ <strong>15 buah</strong> Cabai merah keriting</li>
+              <li>🔴 <strong>3 buah</strong> Cabai merah besar</li>
+              <li>🧅 <strong>8 butir</strong> Bawang merah Sumenep</li>
+              <li>🍅 <strong>1 buah</strong> Tomat merah ukuran sedang</li>
+              <li>🍃 <strong>3 lembar</strong> Daun jeruk purut (buang tulang daunnya)</li>
+              <li>🧂 <strong>Secukupnya</strong> Garam, gula, dan minyak kelapa/sayur</li>
+            </ul>
+
+            <div class="recipe-tips">
+              <strong>✨ Trik Rahasia Warna Merah Menyala:</strong>
+              Rebus cabai dan tomat dalam air mendidih selama 2-3 menit saja sebelum diulek kasar. Proses <em>blanching</em> ini mematikan enzim perubah warna sehingga baladomu tetap merah menggoda berjam-jam!
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="recipe-progress-wrap">
+              <div class="progress-label">
+                <span id="recipeProgressText">Progress Masak: 0%</span>
+                <button id="resetChecklistBtn" style="background:none; border:none; color:var(--text-muted); font-size:0.75rem; cursor:pointer; text-decoration:underline;">Reset Checklist</button>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="recipeProgressFill"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Steps Checklist -->
+          <div class="checklist-box">
+            <div class="checklist-item" id="mstep1">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 1:</strong> Rebus cabai merah keriting, cabai merah besar, dan tomat sebentar saja di air mendidih (2-3 menit) sampai sedikit layu, lalu tiriskan.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="mstep2">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 2:</strong> Tumbuk kasar cabai dan tomat bersama bawang merah. Jangan diblender terlalu halus supaya ada sensasi bulir cabai saat dimakan.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="mstep3">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 3:</strong> Panaskan minyak agak melimpah di wajan dengan api sedang.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="mstep4">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 4:</strong> Tumis ulekan balado dan masukkan daun jeruk purut yang sudah disobek agar aromanya menguar wangi.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="mstep5">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 5:</strong> Beri garam dan sedikit gula. Masak terus sampai minyak berwarna kemerahan dan terpisah dari sambal. Angkat dan siram ke atas telur atau ayam goreng!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT PAGES NAVIGATION -->
+    <section class="next-pages-section">
+      <div class="container">
+        <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.4rem;">Jelajahi Jenis Cabai Lainnya:</h3>
+        <div class="next-grid">
+          <a href="index.html" class="next-card">
+            <span class="next-card-icon">🌶️</span>
+            <div class="next-card-info">
+              <h4>Halaman 1: Cabai Rawit</h4>
+              <p>Si kecil pedas mematikan dengan simulator Scoville dan fakta mengejutkan!</p>
+            </div>
+          </a>
+
+          <a href="hijau.html" class="next-card">
+            <span class="next-card-icon">🟢</span>
+            <div class="next-card-info">
+              <h4>Halaman 3: Cabai Hijau</h4>
+              <p>Si segar gurih primadona rumah makan Padang & kuis seru berhadiah sertifikat!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-quote">"Merahnya cabai di piringmu, bukti semangat masakan Nusantara!" 🔴</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Cabai Rawit</a></li>
+        <li><a href="merah.html">Cabai Merah</a></li>
+        <li><a href="hijau.html">Cabai Hijau</a></li>
+      </ul>
+      <p class="footer-credit">© 2026 Cabai Nusantara • Dibuat dengan cinta, tawa, dan sedikit keringat pedas.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

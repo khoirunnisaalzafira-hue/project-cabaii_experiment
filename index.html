@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌶️ Cabai Rawit - Si Kecil Pedas Nendang | cabai Nusantara</title>
+  <meta name="description" content="Eksplorasi seru tentang Cabai Rawit: si kecil pedas mematikan khas Indonesia. Coba simulator Scoville dan resep sambal korek!">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" id="logoLink">
+        <span class="brand-icon">🌶️</span>
+        <div class="brand-text">
+          <span class="brand-name">Cabai</span>
+          <span class="brand-tagline">Ensiklopedia Cabai Nusantara</span>
+        </div>
+      </a>
+
+      <!-- Navigation for the 3 Pages -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item rawit active">
+            <a href="index.html">🌶️ Cabai Rawit</a>
+          </li>
+          <li class="nav-item merah">
+            <a href="merah.html">🔴 Cabai Merah</a>
+          </li>
+          <li class="nav-item hijau">
+            <a href="hijau.html">🟢 Cabai Hijau</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action buttons -->
+      <div class="nav-actions">
+        <button class="action-btn" id="soundToggleBtn" title="Suara Efek (On/Off)">🔊</button>
+        <button class="action-btn" id="themeToggleBtn" title="Mode Gelap / Terang">🌙</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill badge-rawit">
+            <span>🔥</span> Level Pedas Maksimal
+          </div>
+          <h1 class="hero-title">
+            Cabai Rawit: <br>
+            <span class="highlight rawit-gradient">Kecil Barangnya, Membara Lidahnya!</span>
+          </h1>
+          <p class="hero-desc">
+            Pepatah <em>"Kecil-kecil cabe rawit"</em> bukan sekadar omong kosong! Biarpun tubuhnya mungil, gigitan pedasnya sanggup bikin keringat dingin mengucur dan mata melek seketika.
+          </p>
+
+          <!-- Quick Stats Chips -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-label">Tingkat Kepedasan</span>
+              <span class="stat-value" style="color: #ff3b30;">50.000 - 100.000+ SHU</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Nama Latin</span>
+              <span class="stat-value">Capsicum frutescens</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Pasangan Terbaik</span>
+              <span class="stat-value">Gorengan Bakwan & Tahu Isi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image Card -->
+        <div class="hero-image-wrapper">
+          <div class="hero-card-frame">
+            <img src="cabai_rawit.jpg" alt="Cabai Rawit Segar di Cobek Batu" id="heroRawitImg">
+            <div class="floating-badge">
+              <div>
+                <div class="badge-text-title">Cabai Rawit Merah & Hijau</div>
+                <div class="badge-text-sub">Segar dipetik langsung dari kebun lokal</div>
+              </div>
+              <a href="#simulator" class="btn-pill btn-spicy-rawit">Uji Pedas ⚡</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION 1: SIMULASI SCOVILLE HEAT METER -->
+    <section class="section" id="simulator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Fitur Interaktif 1</span>
+          <h2 class="section-title">Simulator Level Pedas Cabai Rawit</h2>
+          <p class="section-desc">Geser slider di bawah untuk merasakan simulasi reaksi lidah warganet saat menyantap cabai rawit!</p>
+        </div>
+
+        <div class="interactive-card scoville-box">
+          <!-- Live Interactive Display Box -->
+          <div class="scoville-display">
+            <div class="scoville-emoji" id="scovilleEmoji">🥵</div>
+            <div class="scoville-rating" id="scovilleRating">Level 3: Bibir Jontor Merona</div>
+            <div class="scoville-caption" id="scovilleCaption">Ini dia rawit merah matang! Napas mulai megap-megap.</div>
+            
+            <div style="margin-top: 18px; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 12px; width: 100%;">
+              <span style="font-size: 0.85rem; font-weight: 700; color: #ff3b30;" id="scovilleAdvice">
+                Pencegah pedas: Minum susu sapi murni dingin atau sendok madu!
+              </span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="scoville-controls">
+            <div class="slider-container">
+              <label for="scovilleRange">
+                <span>Skala Scoville (SHU):</span>
+                <span id="shuNumber" style="color: #ff3b30; font-size: 1.2rem;">65.000 SHU</span>
+              </label>
+              <input type="range" id="scovilleRange" class="custom-range" min="10000" max="120000" step="5000" value="65000">
+            </div>
+
+            <!-- Quick Presets -->
+            <div>
+              <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 8px;">PILIHAN CEPAT (PRESET):</span>
+              <div class="scoville-presets">
+                <button type="button" class="preset-chip" data-shu="15000">Rawit Muda (15k)</button>
+                <button type="button" class="preset-chip" data-shu="40000">Rawit Hijau (40k)</button>
+                <button type="button" class="preset-chip active" data-shu="65000">Rawit Merah (65k)</button>
+                <button type="button" class="preset-chip" data-shu="85000">Cabe Setan (85k)</button>
+                <button type="button" class="preset-chip" data-shu="110000">Rawit Domba (110k)</button>
+              </div>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">
+              💡 <em>Tips santai:</em> Rasa pedas berasal dari senyawa <strong>Capsaicin</strong> yang larut dalam lemak/susu, bukan larut dalam air putih biasa!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION 2: RESEP SAMBAL KOREK CHECKLIST -->
+    <section class="section" style="background: rgba(255, 59, 48, 0.03);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Dapur Praktis</span>
+          <h2 class="section-title">Resep Interaktif: Sambal Korek Bawang Maut</h2>
+          <p class="section-desc">Cuma butuh 3 menit! Klik tiap langkah yang sudah kamu selesaikan untuk memantau progres memasakmu.</p>
+        </div>
+
+        <div class="interactive-card recipe-grid">
+          <!-- Recipe Details & Tips -->
+          <div class="recipe-info-col">
+            <h3>Bahan-Bahan Sederhana:</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+              <li>🌶️ <strong>25 butir</strong> Cabai rawit merah & hijau campur</li>
+              <li>🧄 <strong>4 siung</strong> Bawang putih (kupas bersih)</li>
+              <li>🧂 <strong>1/2 sendok teh</strong> Garam dapur</li>
+              <li>✨ <strong>1/2 sendok teh</strong> Kaldu bubuk / penyedap rasa</li>
+              <li>🍳 <strong>5 sendok makan</strong> Minyak goreng panas mengepul</li>
+            </ul>
+
+            <div class="recipe-tips">
+              <strong>🔥 Rahasia Enak Abang Gorengan:</strong>
+              Minyak harus benar-benar panas berasap saat disiramkan ke atas ulekan cabai mentah. Desisannya akan melunakkan aroma langu dan mengunci rasa pedas manis alami cabai!
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="recipe-progress-wrap">
+              <div class="progress-label">
+                <span id="recipeProgressText">Progress Masak: 0%</span>
+                <button id="resetChecklistBtn" style="background:none; border:none; color:var(--text-muted); font-size:0.75rem; cursor:pointer; text-decoration:underline;">Reset Checklist</button>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="recipeProgressFill"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Steps Checklist -->
+          <div class="checklist-box">
+            <div class="checklist-item" id="step1">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 1:</strong> Cuci bersih cabai rawit dan buang tangkainya. Tiriskan sampai kering (agar minyak tidak meletup).
+              </div>
+            </div>
+
+            <div class="checklist-item" id="step2">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 2:</strong> Taruh cabai rawit dan bawang putih di atas cobek batu. Beri garam dan kaldu bubuk.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="step3">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 3:</strong> Ulek kasar! Jangan sampai terlalu halus agar tekstur renyah cabai tetap terasa asik waktu digigit.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="step4">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 4:</strong> Panaskan 5 sdm minyak di wajan sampai benar-benar panas mengepul.
+              </div>
+            </div>
+
+            <div class="checklist-item" id="step5">
+              <div class="check-circle">✓</div>
+              <div class="checklist-text">
+                <strong>Langkah 5:</strong> Siramkan minyak panas langsung ke ulekan cabai. Nikmati suara desisan <em>shhhhhhh</em> yang menggoda, lalu aduk rata!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MITOS VS FAKTA INTERAKTIF -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Pojok Edukasi Santai</span>
+          <h2 class="section-title">Mitos atau Fakta Seputar Cabai Rawit?</h2>
+          <p class="section-desc">Klik setiap kartu untuk membalik dan melihat fakta ilmiah yang mengejutkan!</p>
+        </div>
+
+        <div class="facts-grid">
+          <div class="fact-card" id="fact1">
+            <span class="fact-badge badge-mitos">MITOS POPULER</span>
+            <h4 class="fact-question">"Biji cabai adalah bagian yang paling pedas?"</h4>
+            <p class="fact-answer">
+              <strong>SALAH BESAR!</strong> Bagian paling pedas sebenarnya adalah <em>plasenta</em>, yaitu spons putih tempat menempelnya biji cabai. Biji terasa pedas hanya karena bersentuhan langsung dengan lapisan spons tersebut.
+            </p>
+            <div class="fact-click-hint">👆 Klik untuk baca penjelasannya</div>
+          </div>
+
+          <div class="fact-card" id="fact2">
+            <span class="fact-badge badge-fakta">FAKTA MENGEJUTKAN</span>
+            <h4 class="fact-question">"Cabai rawit mengandung lebih banyak Vitamin C dibanding Jeruk?"</h4>
+            <p class="fact-answer">
+              <strong>BENAR SEKALI!</strong> Dalam takaran berat yang sama (100 gram), cabai rawit mengandung vitamin C hingga 2 kali lipat lebih tinggi dari buah jeruk manis. Bagus untuk daya tahan tubuh, asal perutmu kuat ya!
+            </p>
+            <div class="fact-click-hint">👆 Klik untuk baca penjelasannya</div>
+          </div>
+
+          <div class="fact-card" id="fact3">
+            <span class="fact-badge badge-mitos">MITOS POPULER</span>
+            <h4 class="fact-question">"Makan biji cabai langsung bikin radang usus buntu?"</h4>
+            <p class="fact-answer">
+              <strong>MITOS!</strong> Penelitian medis membuktikan bahwa persentase biji makanan penyebab radang usus buntu sangat kecil (kurang dari 1%). Usus buntu biasanya meradang akibat infeksi bakteri atau sumbatan tinja keras.
+            </p>
+            <div class="fact-click-hint">👆 Klik untuk baca penjelasannya</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT PAGES NAVIGATION -->
+    <section class="next-pages-section">
+      <div class="container">
+        <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.4rem;">Jelajahi Jenis Cabai Lainnya:</h3>
+        <div class="next-grid">
+          <a href="merah.html" class="next-card">
+            <span class="next-card-icon">🔴</span>
+            <div class="next-card-info">
+              <h4>Halaman 2: Cabai Merah</h4>
+              <p>Si cantik merona penjaga warna balado & rendang dengan kalkulator porsi masak!</p>
+            </div>
+          </a>
+
+          <a href="hijau.html" class="next-card">
+            <span class="next-card-icon">🟢</span>
+            <div class="next-card-info">
+              <h4>Halaman 3: Cabai Hijau</h4>
+              <p>Si segar gurih primadona rumah makan Padang & kuis seru berhadiah sertifikat!</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-quote">"Hidup tanpa cabai itu seperti lagu tanpa melodi: hambar dan bikin ngantuk!" 🌶️</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Cabai Rawit</a></li>
+        <li><a href="merah.html">Cabai Merah</a></li>
+        <li><a href="hijau.html">Cabai Hijau</a></li>
+      </ul>
+      <p class="footer-credit">© 2026 Cabai Nusantara • Dibuat dengan cinta, tawa, dan sedikit keringat pedas.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

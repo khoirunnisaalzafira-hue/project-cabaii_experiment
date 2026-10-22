@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2d3748" />
+      <stop offset="100%" stop-color="#1a202c" />
+    </radialGradient>
+
+    <!-- Wood / Board Texture Gradient -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a3728" />
+      <stop offset="50%" stop-color="#3b2b1e" />
+      <stop offset="100%" stop-color="#271c13" />
+    </linearGradient>
+
+    <!-- Green Chili 1 Body Gradient (Vibrant Dark to Bright Green) -->
+    <linearGradient id="chiliGreen1" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="25%" stop-color="#22c55e" />
+      <stop offset="70%" stop-color="#15803d" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+
+    <!-- Green Chili 2 Body Gradient -->
+    <linearGradient id="chiliGreen2" x1="20%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#86efac" />
+      <stop offset="30%" stop-color="#22c55e" />
+      <stop offset="75%" stop-color="#166534" />
+      <stop offset="100%" stop-color="#052e16" />
+    </linearGradient>
+
+    <!-- Green Chili 3 Body Gradient -->
+    <linearGradient id="chiliGreen3" x1="0%" y1="20%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="40%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+
+    <!-- Stem Gradient -->
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a3e635" />
+      <stop offset="50%" stop-color="#65a30d" />
+      <stop offset="100%" stop-color="#365314" />
+    </linearGradient>
+
+    <!-- Glossy Highlight Gradient -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#86efac" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="600" fill="url(#bgGrad)" />
+
+  <!-- Wooden Plate / Tampah base -->
+  <ellipse cx="400" cy="330" rx="340" ry="210" fill="url(#boardGrad)" filter="url(#shadow)" stroke="#66462c" stroke-width="8"/>
+  <ellipse cx="400" cy="330" rx="315" ry="190" fill="none" stroke="#54371f" stroke-width="4" stroke-dasharray="10,6" opacity="0.6"/>
+
+  <!-- Secondary chili in background (Curly green chili) -->
+  <path d="M 220 230 C 260 210, 340 230, 420 280 C 490 320, 560 380, 590 410 C 600 420, 580 435, 560 430 C 510 415, 430 350, 360 300 C 290 250, 230 255, 215 240 Z" 
+        fill="url(#chiliGreen3)" filter="url(#shadow)" opacity="0.85"/>
+
+  <!-- Main Big Green Chili 1 (Cabai Hijau Besar) -->
+  <g filter="url(#shadow)">
+    <!-- Main Body -->
+    <path d="M 250 250 
+             C 320 220, 430 250, 530 310 
+             C 600 350, 640 400, 650 420 
+             C 655 428, 640 430, 625 422 
+             C 540 375, 440 330, 360 315 
+             C 280 300, 240 285, 235 270 
+             C 230 258, 240 252, 250 250 Z" 
+          fill="url(#chiliGreen1)" />
+    
+    <!-- Glossy Highlight Curve -->
+    <path d="M 265 255 
+             C 335 232, 425 260, 520 315 
+             C 575 348, 605 385, 620 405
+             C 610 395, 570 355, 510 323
+             C 420 275, 335 245, 270 262 Z" 
+          fill="url(#glossGrad)" />
+
+    <!-- Calyx (Kelopak) -->
+    <path d="M 245 245 C 240 240, 230 245, 225 255 C 220 265, 230 275, 240 278 C 248 280, 252 272, 252 260 Z" 
+          fill="#3f6212" stroke="#1a2e05" stroke-width="2" />
+    <polygon points="248,250 235,248 240,260 230,268 245,272 250,262" fill="#4d7c0f" />
+    
+    <!-- Chili Stem (Tangkai Cabai) -->
+    <path d="M 235 255 C 205 245, 175 220, 160 190 C 158 185, 164 182, 168 186 C 182 210, 210 235, 238 250 Z" 
+          fill="url(#stemGrad)" />
+  </g>
+
+  <!-- Main Chili 2 (Crossing Cabai Hijau Keriting) -->
+  <g filter="url(#shadow)">
+    <!-- Curly Chili Body -->
+    <path d="M 480 200 
+             C 450 240, 420 300, 390 350 
+             C 360 400, 330 450, 290 475 
+             C 275 485, 268 475, 275 465 
+             C 305 430, 345 375, 375 320 
+             C 410 260, 440 215, 470 195 
+             C 478 190, 485 194, 480 200 Z" 
+          fill="url(#chiliGreen2)" />
+    
+    <!-- Glossy reflection for chili 2 -->
+    <path d="M 470 208 
+             C 442 245, 412 305, 382 355 
+             C 355 400, 330 440, 300 460
+             C 308 450, 335 408, 362 360
+             C 395 305, 428 250, 460 212 Z" 
+          fill="url(#glossGrad)" opacity="0.8" />
+
+    <!-- Calyx -->
+    <path d="M 475 192 C 485 188, 492 195, 490 205 C 488 212, 480 215, 472 210 Z" 
+          fill="#3f6212" stroke="#1a2e05" stroke-width="2" />
+    <!-- Stem -->
+    <path d="M 486 195 C 505 175, 520 150, 525 130 C 527 125, 532 127, 531 132 C 525 155, 510 180, 489 202 Z" 
+          fill="url(#stemGrad)" />
+  </g>
+
+  <!-- Fresh Lime & Green Tomato (Condiments for Sambal Ijo) -->
+  <g filter="url(#shadow)">
+    <!-- Green Tomato slice -->
+    <circle cx="280" cy="380" r="45" fill="#4ade80" stroke="#16a34a" stroke-width="4"/>
+    <circle cx="280" cy="380" r="38" fill="#86efac" opacity="0.4"/>
+    <circle cx="280" cy="380" r="16" fill="#15803d" />
+    <circle cx="270" cy="370" r="4" fill="#fef08a" />
+    <circle cx="290" cy="372" r="4" fill="#fef08a" />
+    <circle cx="280" cy="392" r="4" fill="#fef08a" />
+  </g>
+
+  <!-- Water droplets -->
+  <ellipse cx="400" cy="275" rx="5" ry="3" fill="#ffffff" opacity="0.75" />
+  <ellipse cx="480" cy="305" rx="6" ry="4" fill="#ffffff" opacity="0.8" />
+  <ellipse cx="340" cy="380" rx="4" ry="3" fill="#ffffff" opacity="0.7" />
+  <ellipse cx="550" cy="345" rx="5" ry="3" fill="#ffffff" opacity="0.7" />
+
+  <!-- Playful Decorative Badge -->
+  <g transform="translate(620, 80)">
+    <circle cx="0" cy="0" r="55" fill="#15803d" stroke="#86efac" stroke-width="4" filter="url(#shadow)"/>
+    <text x="0" y="-8" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">100% SEGAR</text>
+    <text x="0" y="14" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#fef08a" text-anchor="middle">GURIH</text>
+    <text x="0" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Khas Padang</text>
+  </g>
+</svg>
